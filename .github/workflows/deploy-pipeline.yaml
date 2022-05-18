@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create release
-        uses: actions/create-relase@v1
+        uses: actions/create-relase@v2
         env:
           GITHUB_TOKEN: ${{ secrets.guthub_token }}
         with:
