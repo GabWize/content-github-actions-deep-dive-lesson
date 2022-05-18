@@ -54,8 +54,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.guthub_token }}
         with:
-          tag_name: ${{ guthub.run_number }}
-          release_name: Release from ${{ guthub.run_number }}
+          tag_name: ${{ github.run_number }}
+          release_name: Release from ${{ github.run_number }}
           body: New release for ${{ github.sha }}. Release notes docuentatin
           draft: flase
           prerelease:  false
