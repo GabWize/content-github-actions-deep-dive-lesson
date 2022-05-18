@@ -64,8 +64,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: zipped-bundle
-      - name: actions/upload-release-asset@v1
-        uses: actions/uload-release-asset@v1
+      - name: upload release asset
+        uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrests.github_token }}
         with:
